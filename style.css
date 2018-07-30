@@ -1,0 +1,194 @@
+/*
+theme name: custom
+author: me
+*/
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#333;
+}
+a:link,
+a:visited{
+    color:#006ec3;
+}
+.post{
+    border-bottom:2px dotted #bbbbbb;
+}
+.post:last-of-type{
+    border-bottom: none;
+}
+
+p{
+    line-height: 1.65;
+}
+
+/* general layout */
+div.container{
+    max-width:920px;
+    
+    margin:0 auto;
+    padding-left:20px;
+    padding-right:20px;
+}
+/*header*/
+.head1{
+    text-decoration: none;
+    color:black;
+}
+/*footer*/
+.site-footer{
+    margin-top:10px;
+    border-top:2px solid #999;
+}
+
+/*nav menu */
+.site-nav ul{
+  margin-top: 10px;
+ margin-left:-40px;
+  
+}
+
+.site-nav ul:before, .site-nav ul:after {
+    content: ""; display: table;
+}
+.site-nav ul:after{
+    clear:both;
+}
+.site-nav ul {
+    *zoom:1;
+}
+.site-nav ul li{
+    list-style:none;
+    float:left;
+}
+
+
+/*site header menu */
+.site-header nav ul li{
+    margin-right:20px;
+}
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+    display:block;
+    padding:10px 5px;
+    border:1px solid #BBB;
+    
+    text-decoration: none;
+}
+
+.site-header nav ul li a:hover{
+  background-color: lightgray;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited{
+    background-color: navy;
+    color:white;
+}
+
+article.post-page h2{
+    font-size:30px;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+div.title-column{
+    width:30%;
+    float: left;
+   
+}
+div.text-column{
+    width:70%;
+    float:right;
+}
+
+/*child links */
+.children-links{
+
+font-size:90%;
+
+white-space: nowrap;
+overflow-x:auto; 
+}
+.children-links a:link,
+.children-links a:visisted{
+    text-decoration: none;
+    color:black;
+}
+
+.children-links ul{
+    display: inline-block;
+}
+
+.children-links li {
+    margin-right:20px;
+    display: inline-block;
+}
+.parent-link{
+    position: relative;
+    bottom:22px;
+    padding-right:20px;
+    border-right: 3px solid #DDD;
+}
+.children-links   {
+    list-style:none;
+    display: inline-block;
+    margin-right:20px;
+    padding-right:20px;
+    
+    font-size:120%;
+    font-weight: bold;
+}
+ .parent-link a:link,
+ .parent-link a:visited{
+    color:#333;
+}
+.test1 a:link,
+.test1 a:visited{
+text-decoration: none;
+
+}
+.children-links .current_page_item a:link,   /* wordpress automatically adds class "current page item" to the list item of the relevant page you are on*/
+.children-links .current_page_item a:visited{
+border-bottom: 1px solid #DDD;
+color:black;
+cursor:default;
+}
+
+/*post styles */
+.post h2{
+    margin-bottom:0;
+}
+p.info{
+    font-size:87%;
+    color: #999;
+    margin-top:0;
+}
+p.info a:link,
+p.info a:visited{
+    color:#999;
+}
+
+/*image styles */
+img {
+    max-width: 100%;
+    height:auto;
+}
+.has-thumbnail{
+    position: relative;
+    padding-left:200px;
+    padding-bottom:50px;
+}
+.post-thumb{
+position: absolute;
+top: 0;
+left:0;
+}
